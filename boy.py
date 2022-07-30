@@ -13,7 +13,7 @@ client = commands.Bot(command_prefix=settings.Prefix, help_command=None, intents
 
 @client.event
 async def on_ready():
-    print("Bot is ready!")
+    print("Bot is ready!ohiæg sdfvbækljasd")
     await client.change_presence(status=discord.Status.online, activity=discord.Game(settings.BotStatus))
 
 async def writeHelp(channel):
