@@ -9,6 +9,6 @@ discord_bot = commands.Bot(command_prefix='ohPleaseAdmin ')
 @discord_bot.command(name='nick')
 async def change_name(ctx, member : discord.Member, arg):
     await member.edit(nick=arg)
-    await ctx.send("Name has been changed to: " + arg)
+    await ctx.send("NameS has been changed to: " + arg)
 
 discord_bot.run(TOKEN)
