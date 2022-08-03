@@ -2,13 +2,17 @@ from tokenize import String
 import discord
 from discord.ext import commands
 
-TOKEN = "MTAwMjU3ODMzMjg5NTk1NzA1Mg.GaBcf4.D_bY29oRD8KWfMwsdOjNh_vr8TeWiDyrmAOxss"
+import settings
 
 discord_bot = commands.Bot(command_prefix='ohPleaseAdmin ')
+
+@discord_bot.command(name='ping')
+async def ping(ctx):
+    await ctx.send("PONG")
 
 @discord_bot.command(name='nick')
 async def change_name(ctx, member : discord.Member, arg):
     await member.edit(nick=arg)
-    await ctx.send("NameS has been changed to: " + arg)
+    await ctx.send("Name has been changed to: " + arg)
 
-discord_bot.run(TOKEN)
+discord_bot.run(settings.TOKEN)
