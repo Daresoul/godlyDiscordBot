@@ -1,3 +1,4 @@
+from array import array
 import math
 
 modifier = 25
@@ -13,6 +14,7 @@ def CreateSentences(whatToWrite, wordEmoji, fillEmoji):
     for c in whatToWrite:
         if i % modifier == 0:
             arrIndex = math.floor(i / modifier)
+            print(isinstance(arr[arrIndex], array))
             arr[arrIndex] = ["", "", "", "", "", "", ""]
             AddSpace(arr[arrIndex], fillEmoji)
             i += 1
