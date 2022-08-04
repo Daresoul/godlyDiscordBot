@@ -12,9 +12,8 @@ discord_bot = commands.Bot(command_prefix='ohPleaseAdmin ')
 async def write(ctx, arg):
     text = OnJoinBot.CreateSentences(arg, "❤", "🎶")
     i = 0
-    iterations = math.ceil(len(text[0]) / modifier)
-    for i in range(0, iterations):
-        await ctx.send(text[0][i*modifier : (i + 1) * modifier] + "\n" + text[1][i*modifier : (i + 1) * modifier] + "\n" + text[2][i*modifier : (i + 1) * modifier] + "\n" + text[3][i*modifier : (i + 1) * modifier] + "\n" + text[4][i*modifier : (i + 1) * modifier] + "\n" + text[5][i*modifier : (i + 1) * modifier] + "\n" + text[6][i*modifier : (i + 1) * modifier])
+    for i in range(0, text):
+        await ctx.send(text[i][0] + "\n" + text[i][1] + "\n" + text[i][2] + "\n" + text[i][3] + "\n" + text[i][4] + "\n" + text[i][5] + "\n" + text[i][6])
     #25
     
 @discord_bot.command(name='ping')
