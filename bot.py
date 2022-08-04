@@ -7,6 +7,11 @@ import OnJoinBot
 
 discord_bot = commands.Bot(command_prefix='ohPleaseAdmin ')
 
+@discord_bot.command(name='write')
+async def write(ctx, arg):
+    string = OnJoinBot.CreateSentences(arg, "❤", "🎶")
+    ctx.send(string)
+
 @discord_bot.command(name='ping')
 async def ping(ctx):
     await ctx.send("PONG")
