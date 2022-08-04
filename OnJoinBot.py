@@ -13,7 +13,7 @@ def CreateSentences(whatToWrite, wordEmoji, fillEmoji):
     for c in whatToWrite:
         if len(arr[arrIndex][0]) > 22:
             arr.append(["", "", "", "", "", "", ""])
-            AddSpace(arr[arrIndex], fillEmoji)
+            AddSpace(arr[arrIndex + 1], fillEmoji)
             arrIndex += 1
         GetCharacter(arr[arrIndex], c, wordEmoji, fillEmoji)
         AddSpace(arr[arrIndex], fillEmoji)
