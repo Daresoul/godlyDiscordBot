@@ -11,7 +11,6 @@ discord_bot = commands.Bot(command_prefix='ohPleaseAdmin ')
 @discord_bot.command(name='write')
 async def write(ctx, arg):
     text = OnJoinBot.CreateSentences(arg, "❤", "🎶")
-    modifier = 25
     i = 0
     iterations = math.ceil(len(text[0]) / modifier)
     for i in range(0, iterations):
