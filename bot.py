@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 
 import settings
+import OnJoinBot
 
 discord_bot = commands.Bot(command_prefix='ohPleaseAdmin ')
 
@@ -25,6 +26,5 @@ async def change_name_error(ctx, error):
         await ctx.send('Cannot find the Member you are speaking of...')
     if isinstance(error, commands.TooManyArguments):
         await ctx.send('Ummm, have u looked in the help command?')
-
 
 discord_bot.run(settings.TOKEN)
