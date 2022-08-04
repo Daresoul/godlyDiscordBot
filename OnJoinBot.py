@@ -4,18 +4,21 @@ modifier = 25
 
 def CreateSentences(whatToWrite, wordEmoji, fillEmoji):
     arr = []
+    arr[0] = ["", "", "", "", "", "", ""]
 
-    AddSpace(arr, fillEmoji)
-    i = 0
+    AddSpace(arr[0], fillEmoji)
+
+    i = 1
+    arrIndex = 0
     for c in whatToWrite:
-        arrIndex = math.floor(i / modifier)
         if i % modifier == 0:
+            arrIndex = math.floor(i / modifier)
             arr[arrIndex] = ["", "", "", "", "", "", ""]
             AddSpace(arr[arrIndex], fillEmoji)
+            i += 1
         GetCharacter(arr[arrIndex], c, wordEmoji, fillEmoji)
         AddSpace(arr[arrIndex], fillEmoji)
         i += 1
-
 
     return arr
 
