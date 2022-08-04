@@ -12,6 +12,7 @@ discord_bot = commands.Bot(command_prefix='ohPleaseAdmin ')
 async def write(ctx, arg):
     text = OnJoinBot.CreateSentences(arg, "❤", "🎶")
     i = 0
+    print(len(text))
     for i in range(0, len(text)):
         await ctx.send(text[i][0] + "\n" + text[i][1] + "\n" + text[i][2] + "\n" + text[i][3] + "\n" + text[i][4] + "\n" + text[i][5] + "\n" + text[i][6])
     #25
