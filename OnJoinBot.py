@@ -20,238 +20,238 @@ def AddSpace(arr, fillEmoji):
         arr[6] += fillEmoji
 
 def printA(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji +fillEmoji
+    arr[1] += fillEmoji + wordEmoji + fillEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + wordEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printB(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + fillEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + wordEmoji + fillEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printC(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += fillEmoji + wordEmoji + fillEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + fillEmoji + fillEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printD(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + fillEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printE(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[3] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[5] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + fillEmoji
+    arr[3] += wordEmoji + wordEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + fillEmoji
+    arr[5] += wordEmoji + wordEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printF(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[3] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + fillEmoji
+    arr[3] += wordEmoji + wordEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + fillEmoji
+    arr[5] += wordEmoji + fillEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printG(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += fillEmoji + wordEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + fillEmoji
+    arr[3] += wordEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printH(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + wordEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printI(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[2] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[3] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[5] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += fillEmoji + wordEmoji + fillEmoji
+    arr[2] += fillEmoji + fillEmoji + fillEmoji
+    arr[3] += fillEmoji + wordEmoji + fillEmoji
+    arr[4] += fillEmoji + wordEmoji + fillEmoji
+    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printJ(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += fillEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += fillEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += fillEmoji + fillEmoji + wordEmoji
+    arr[2] += fillEmoji + fillEmoji + wordEmoji
+    arr[3] += fillEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printK(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[3] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + wordEmoji + fillEmoji
+    arr[3] += wordEmoji + wordEmoji + fillEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printL(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[5] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + fillEmoji
+    arr[2] += wordEmoji + fillEmoji + fillEmoji
+    arr[3] += wordEmoji + fillEmoji + fillEmoji
+    arr[4] += wordEmoji + fillEmoji + fillEmoji
+    arr[5] += wordEmoji + wordEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printM(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + wordEmoji + wordEmoji
+    arr[3] += wordEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printN(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[2] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += fillEmoji + fillEmoji + fillEmoji
+    arr[2] += fillEmoji + wordEmoji + fillEmoji
+    arr[3] += wordEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printO(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += fillEmoji + wordEmoji + fillEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printP(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + fillEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + wordEmoji + fillEmoji
+    arr[4] += wordEmoji + fillEmoji + fillEmoji
+    arr[5] += wordEmoji + fillEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printQ(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += fillEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[4] += fillEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += fillEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += fillEmoji + wordEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += fillEmoji + wordEmoji + wordEmoji
+    arr[4] += fillEmoji + fillEmoji + wordEmoji
+    arr[5] += fillEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printR(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + fillEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + wordEmoji + fillEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printS(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += fillEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[3] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += fillEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += fillEmoji + wordEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + fillEmoji
+    arr[3] += fillEmoji + wordEmoji + fillEmoji
+    arr[4] += fillEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printT(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[2] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[3] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[5] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + wordEmoji
+    arr[2] += fillEmoji + wordEmoji + fillEmoji
+    arr[3] += fillEmoji + wordEmoji + fillEmoji
+    arr[4] += fillEmoji + wordEmoji + fillEmoji
+    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printU(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + wordEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printV(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printW(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += wordEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + wordEmoji + wordEmoji
+    arr[5] += wordEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printX(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += fillEmoji + wordEmoji + fillEmoji
+    arr[4] += wordEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + fillEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printY(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[2] += wordEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[3] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[4] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[5] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + wordEmoji
+    arr[3] += fillEmoji + wordEmoji + fillEmoji
+    arr[4] += fillEmoji + wordEmoji + fillEmoji
+    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def printZ(arr, wordEmoji, fillEmoji):
-    arr[0] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
-    arr[1] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[2] += fillEmoji +  " "  + wordEmoji +  " "  + fillEmoji
-    arr[3] += fillEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[4] += fillEmoji +  " "  + fillEmoji +  " "  + wordEmoji
-    arr[5] += wordEmoji +  " "  + wordEmoji +  " "  + wordEmoji
-    arr[6] += fillEmoji +  " "  + fillEmoji +  " "  + fillEmoji
+    arr[0] += fillEmoji + fillEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + wordEmoji
+    arr[2] += fillEmoji + wordEmoji + fillEmoji
+    arr[3] += fillEmoji + fillEmoji + wordEmoji
+    arr[4] += fillEmoji + fillEmoji + wordEmoji
+    arr[5] += wordEmoji + wordEmoji + wordEmoji
+    arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def GetCharacter(arr, c, wordEmoji, fillEmoji):
     if c == 'a': printA(arr, wordEmoji, fillEmoji)
