@@ -9,19 +9,14 @@ def CreateSentences(whatToWrite, wordEmoji, fillEmoji):
 
     AddSpace(arr[0], fillEmoji)
 
-    i = 1
     arrIndex = 0
     for c in whatToWrite:
-        print(len(arr[arrIndex][0]))
         if len(arr[arrIndex][0]) > 22:
-            print("in here")
-            arrIndex = math.floor(i / modifier)
             arr.append(["", "", "", "", "", "", ""])
             AddSpace(arr[arrIndex], fillEmoji)
-            i += 1
+            arrIndex += 1
         GetCharacter(arr[arrIndex], c, wordEmoji, fillEmoji)
         AddSpace(arr[arrIndex], fillEmoji)
-        i += 3
 
     return arr
 
