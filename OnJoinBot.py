@@ -13,7 +13,7 @@ def CreateSentences(whatToWrite, wordEmoji, fillEmoji):
     arrIndex = 0
     for c in whatToWrite:
         print(i % modifier, i % modifier == 0)
-        if i % modifier < 3:
+        if i % modifier < 3 and i > 3:
             print("in here")
             arrIndex = math.floor(i / modifier)
             arr.append(["", "", "", "", "", "", ""])
