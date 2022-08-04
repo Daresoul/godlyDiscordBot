@@ -9,8 +9,8 @@ discord_bot = commands.Bot(command_prefix='ohPleaseAdmin ')
 
 @discord_bot.command(name='write')
 async def write(ctx, arg):
-    string = OnJoinBot.CreateSentences(arg, "❤", "🎶")
-    await ctx.send(string)
+    text = OnJoinBot.CreateSentences(arg, "❤", "🎶")
+    await ctx.send(await channel.send(text[0] + "\n" + text[1] + "\n" + text[2] + "\n" + text[3] + "\n" + text[4] + "\n" + text[5] + "\n" + text[6]))
 
 @discord_bot.command(name='ping')
 async def ping(ctx):
