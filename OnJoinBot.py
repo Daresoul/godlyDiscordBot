@@ -337,11 +337,11 @@ def print7(arr, wordEmoji, fillEmoji):
 
 def print8(arr, wordEmoji, fillEmoji):
     arr[0] += fillEmoji + fillEmoji + fillEmoji
-    arr[1] += fillEmoji + wordEmoji + fillEmoji
+    arr[1] += wordEmoji + wordEmoji + wordEmoji
     arr[2] += wordEmoji + fillEmoji + wordEmoji
-    arr[3] += fillEmoji + wordEmoji + fillEmoji
+    arr[3] += wordEmoji + wordEmoji + wordEmoji
     arr[4] += wordEmoji + fillEmoji + wordEmoji
-    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[5] += wordEmoji + wordEmoji + wordEmoji
     arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def print9(arr, wordEmoji, fillEmoji):
