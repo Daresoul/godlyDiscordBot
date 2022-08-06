@@ -257,8 +257,8 @@ def printY(arr, wordEmoji, fillEmoji):
 def printZ(arr, wordEmoji, fillEmoji):
     arr[0] += fillEmoji + fillEmoji + fillEmoji
     arr[1] += wordEmoji + wordEmoji + wordEmoji
-    arr[2] += fillEmoji + wordEmoji + fillEmoji
-    arr[3] += fillEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + wordEmoji + fillEmoji
+    arr[3] += fillEmoji + wordEmoji + fillEmoji
     arr[4] += fillEmoji + fillEmoji + wordEmoji
     arr[5] += wordEmoji + wordEmoji + wordEmoji
     arr[6] += fillEmoji + fillEmoji + fillEmoji
@@ -311,9 +311,9 @@ def print4(arr, wordEmoji, fillEmoji):
 def print5(arr, wordEmoji, fillEmoji):
     arr[0] += fillEmoji + fillEmoji + fillEmoji
     arr[1] += wordEmoji + wordEmoji + wordEmoji
-    arr[2] += fillEmoji + fillEmoji + wordEmoji
+    arr[2] += wordEmoji + fillEmoji + fillEmoji
     arr[3] += wordEmoji + wordEmoji + wordEmoji
-    arr[4] += wordEmoji + fillEmoji + fillEmoji
+    arr[4] += fillEmoji + fillEmoji + wordEmoji
     arr[5] += wordEmoji + wordEmoji + wordEmoji
     arr[6] += fillEmoji + fillEmoji + fillEmoji
 
