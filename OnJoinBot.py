@@ -257,9 +257,9 @@ def printY(arr, wordEmoji, fillEmoji):
 def printZ(arr, wordEmoji, fillEmoji):
     arr[0] += fillEmoji + fillEmoji + fillEmoji
     arr[1] += wordEmoji + wordEmoji + wordEmoji
-    arr[2] += wordEmoji + fillEmoji + fillEmoji
+    arr[2] += fillEmoji + fillEmoji + wordEmoji
     arr[3] += fillEmoji + wordEmoji + fillEmoji
-    arr[4] += fillEmoji + fillEmoji + wordEmoji
+    arr[4] += wordEmoji + fillEmoji + fillEmoji
     arr[5] += wordEmoji + wordEmoji + wordEmoji
     arr[6] += fillEmoji + fillEmoji + fillEmoji
 
