@@ -312,18 +312,18 @@ def print5(arr, wordEmoji, fillEmoji):
     arr[0] += fillEmoji + fillEmoji + fillEmoji
     arr[1] += wordEmoji + wordEmoji + wordEmoji
     arr[2] += fillEmoji + fillEmoji + wordEmoji
-    arr[3] += fillEmoji + wordEmoji + fillEmoji
+    arr[3] += wordEmoji + wordEmoji + wordEmoji
     arr[4] += wordEmoji + fillEmoji + fillEmoji
-    arr[5] += fillEmoji + wordEmoji + wordEmoji
+    arr[5] += wordEmoji + wordEmoji + wordEmoji
     arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def print6(arr, wordEmoji, fillEmoji):
     arr[0] += fillEmoji + fillEmoji + fillEmoji
     arr[1] += wordEmoji + wordEmoji + wordEmoji
     arr[2] += wordEmoji + fillEmoji + fillEmoji
-    arr[3] += wordEmoji + wordEmoji + fillEmoji
+    arr[3] += wordEmoji + wordEmoji + wordEmoji
     arr[4] += wordEmoji + fillEmoji + wordEmoji
-    arr[5] += fillEmoji + wordEmoji + fillEmoji
+    arr[5] += wordEmoji + wordEmoji + wordEmoji
     arr[6] += fillEmoji + fillEmoji + fillEmoji
 
 def print7(arr, wordEmoji, fillEmoji):
