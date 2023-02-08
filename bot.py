@@ -16,19 +16,6 @@ async def ready_listener(_):
     print("The bot is ready!")
 
 @discord_bot.command
-@lightbulb.option("text", "text displayed in emojis")
-@lightbulb.command('writer', 'write something with emojis')
-@lightbulb.implements(lightbulb.PrefixCommand)
-async def write(ctx: lightbulb.Context):
-    text = OnJoinBot.CreateSentences(ctx.options.text.lower(), "🍅", "🎶")
-    i = 0
-    for i in range(0, len(text)):
-        content = text[i][0] + "\n" + text[i][1] + "\n" + text[i][2] + "\n" + text[i][3] + "\n" + text[i][4] + "\n" + text[i][5] + "\n" + text[i][6]
-        await ctx.app.rest.create_message(ctx.channel_id, content)
-    await ctx.respond("Made the text!")
-
-
-@discord_bot.command
 @lightbulb.option("text", "text displayed in emojis", type=str)
 @lightbulb.option("fill_emoji", "the fill emoji", type=hikari.Emoji)
 @lightbulb.option("text_emoji", "the text emoji", type=hikari.Emoji)
