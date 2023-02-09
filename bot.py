@@ -8,7 +8,7 @@ discord_bot = lightbulb.BotApp(prefix='!', token=settings.TOKEN, intents=hikari.
 
 
 @discord_bot.listen(hikari.ShardReadyEvent)
-async def ready_listener(_):
+async def ready_listener(event: hikari.ShardReadyEvent):
     print("The bot is ready!")
 
 
