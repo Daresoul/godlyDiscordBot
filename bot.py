@@ -1,19 +1,27 @@
-from tokenize import String
-import discord
-import math
-from discord.ext import commands
 import hikari
 import lightbulb
 
 import settings
 import OnJoinBot
 
-discord_bot = lightbulb.BotApp(prefix='!', token=settings.TOKEN, intents=hikari.Intents.ALL_UNPRIVILEGED)
+discord_bot = lightbulb.BotApp(prefix='!', token=settings.TOKEN, intents=hikari.Intents.GUILD_MEMBERS)
 
 
 @discord_bot.listen(hikari.ShardReadyEvent)
 async def ready_listener(_):
     print("The bot is ready!")
+
+
+@discord_bot.listen(hikari.events.member_events.MemberCreateEvent)
+async def member_created(event: hikari.MemberCreateEvent):
+    print("person joined")
+    text = OnJoinBot.CreateSentences(event.member.username, "🍅", "⬛")
+    i = 0
+    for i in range(0, len(text)):
+        content = text[i][0] + "\n" + text[i][1] + "\n" + text[i][2] + "\n" + text[i][3] + "\n" + text[i][4] + "\n" + \
+                  text[i][5] + "\n" + text[i][6]
+        await event.app.rest.create_message(811074963464912896, content)
+
 
 @discord_bot.command
 @lightbulb.option("text", "text displayed in emojis", type=str)
@@ -25,7 +33,8 @@ async def write(ctx: lightbulb.SlashContext):
     text = OnJoinBot.CreateSentences(ctx.options.text.lower(), ctx.options.text_emoji, ctx.options.fill_emoji)
     i = 0
     for i in range(0, len(text)):
-        content = text[i][0] + "\n" + text[i][1] + "\n" + text[i][2] + "\n" + text[i][3] + "\n" + text[i][4] + "\n" + text[i][5] + "\n" + text[i][6]
+        content = text[i][0] + "\n" + text[i][1] + "\n" + text[i][2] + "\n" + text[i][3] + "\n" + text[i][4] + "\n" + \
+                  text[i][5] + "\n" + text[i][6]
         await ctx.app.rest.create_message(ctx.channel_id, content)
     await ctx.respond("Made the text!")
 
