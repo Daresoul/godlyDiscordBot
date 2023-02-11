@@ -52,10 +52,30 @@ async def ping(ctx: lightbulb.SlashContext):
 @lightbulb.command('nick', 'give new nickname')
 @lightbulb.implements(lightbulb.SlashCommand)
 async def nick(ctx: lightbulb.SlashContext):
-    await ctx.app.rest.edit_member(ctx.get_guild(), ctx.options.member.id, nickname=ctx.options.name)
+    if not ctx.guild_id:
+        await ctx.respond("Can only be invoked on a guild.")
+        return
+
+    await ctx.app.rest.edit_member(ctx.guild_id, ctx.options.member.id, nickname=ctx.options.name)
     await ctx.respond("Name has been changed to: " + ctx.options.name)
     print("Changed name.")
 
+
+@discord_bot.listen(lightbulb.CommandErrorEvent)
+async def on_error(event: lightbulb.CommandErrorEvent) -> None:
+    if isinstance(event.exception, lightbulb.CommandInvocationError):
+        await event.context.respond(f"Something went wrong during invocation of command `{event.context.command.name}`.\nThe error message is:\n`{event.exception.__cause__}`")
+        raise event.exception
+
+    # Unwrap the exception to get the original cause
+    exception = event.exception.__cause__ or event.exception
+
+    if isinstance(exception, lightbulb.NotOwner):
+        await event.context.respond("You are not the owner of this bot.")
+    elif isinstance(exception, lightbulb.CommandIsOnCooldown):
+        await event.context.respond(f"This command is on cooldown. Retry in `{exception.retry_after:.2f}` seconds.")
+    else:
+        raise exception
 
 '''@change_name.error
 async def change_name_error(ctx, error):
