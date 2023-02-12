@@ -1,6 +1,11 @@
 import hikari
 import lightbulb
 
+import firebase_admin
+from firebase_admin import db
+
+import json
+
 import settings
 import OnJoinBot
 
@@ -10,8 +15,10 @@ discord_bot = lightbulb.BotApp(prefix='!', token=settings.TOKEN, intents=hikari.
 @discord_bot.listen(hikari.ShardReadyEvent)
 async def ready_listener(event: hikari.ShardReadyEvent):
     print("The bot is ready!")
-
-
+    cred = firebase_admin.credentials.Certificate("firebase.json")
+    app = firebase_admin.initialize_app(cred, {
+    'databaseURL': 'https://godlydiscordbot-7f469-default-rtdb.europe-west1.firebasedatabase.app/'
+    })
 @discord_bot.listen(hikari.events.member_events.MemberCreateEvent)
 async def member_created(event: hikari.MemberCreateEvent):
     print("person joined")
@@ -21,6 +28,60 @@ async def member_created(event: hikari.MemberCreateEvent):
         content = text[i][0] + "\n" + text[i][1] + "\n" + text[i][2] + "\n" + text[i][3] + "\n" + text[i][4] + "\n" + \
                   text[i][5] + "\n" + text[i][6]
         await event.app.rest.create_message(811074963464912896, content)
+
+
+@discord_bot.command
+@lightbulb.option("count", "the counter u wanna add to", type=str)
+@lightbulb.option("member", "member to change name of", type=hikari.User)
+@lightbulb.command('count', 'Adds to a count')
+@lightbulb.implements(lightbulb.SlashCommand)
+async def add_count(ctx: lightbulb.SlashContext):
+    ref = db.reference('/Counter/' + ctx.options.count)
+
+    if ref.get() == None:
+        await ctx.respond("Use one already exisitng")
+        return
+
+    value = ref.child(str(ctx.options.member.id)).get()
+
+    if value == None:
+        value = 0
+
+    ref.update({
+        ctx.options.member.id: int(value) + 1
+    })
+
+    await ctx.respond(f"A counter for {ctx.options.count} has been added. Current {ctx.options.count} is {int(value) + 1} for <@{ctx.options.member.id}>")
+
+'''@discord_bot.command
+@lightbulb.option("count", "the counter u want a leaderboard for", type=str)
+@lightbulb.command('leaderboard', 'Adds to a count')
+@lightbulb.implements(lightbulb.SlashCommand)
+async def leaderboard(ctx: lightbulb.SlashContext):
+    ref = db.reference('/Counter/' + ctx.options.count)
+
+    values = ref.get()
+
+    if values == None:
+        await ctx.respond("Use one already exisitng")
+        return
+
+    json_string = str(values)
+
+    a = json.dumps("{'name':1, ex: []}")
+
+    print(a)
+    b = json.loads(a)
+
+    print(b)
+    print(type(b))
+
+    #j = sorted(j.items(), key=lambda item: item[1])
+
+    #print(j)
+
+    await ctx.respond("nothing")
+'''
 
 
 @discord_bot.command
