@@ -1,3 +1,0 @@
-TOKEN = ''
-BotStatus = "Chillin"
-Prefix = "!"
