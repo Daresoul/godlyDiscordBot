@@ -7,7 +7,7 @@ from firebase_admin import db
 import settings
 import OnJoinBot
 
-cred = firebase_admin.credentials.Certificate("firebase.json")
+cred = firebase_admin.credentials.Certificate("./firebase.json")
 app = firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://godlydiscordbot-7f469-default-rtdb.europe-west1.firebasedatabase.app/'
 })
