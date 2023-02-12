@@ -1,6 +1,3 @@
-from array import array
-import math
-
 modifier = 25
 
 def CreateSentences(whatToWrite, wordEmoji, fillEmoji):
