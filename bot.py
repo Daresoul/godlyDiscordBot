@@ -7,16 +7,17 @@ from firebase_admin import db
 import settings
 import OnJoinBot
 
+cred = firebase_admin.credentials.Certificate("firebase.json")
+app = firebase_admin.initialize_app(cred, {
+    'databaseURL': 'https://godlydiscordbot-7f469-default-rtdb.europe-west1.firebasedatabase.app/'
+})
+
 discord_bot = lightbulb.BotApp(prefix='!', token=settings.TOKEN, intents=hikari.Intents.GUILD_MEMBERS)
 
 
 @discord_bot.listen(hikari.ShardReadyEvent)
 async def ready_listener(event: hikari.ShardReadyEvent):
     print("The bot is ready!")
-    cred = firebase_admin.credentials.Certificate("firebase.json")
-    app = firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://godlydiscordbot-7f469-default-rtdb.europe-west1.firebasedatabase.app/'
-    })
 @discord_bot.listen(hikari.events.member_events.MemberCreateEvent)
 async def member_created(event: hikari.MemberCreateEvent):
     print("person joined")
