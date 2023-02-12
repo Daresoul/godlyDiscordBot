@@ -4,7 +4,7 @@ import lightbulb
 import firebase_admin
 from firebase_admin import db
 
-from env import settings
+import settings
 import OnJoinBot
 
 discord_bot = lightbulb.BotApp(prefix='!', token=settings.TOKEN, intents=hikari.Intents.GUILD_MEMBERS)
