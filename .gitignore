@@ -3,9 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-settings/settings.py
-settings/firebase.json
-firebase1.json
+*settings.py
+*firebase.json
 
 __pycache__
 
