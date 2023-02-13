@@ -7,9 +7,9 @@ from firebase_admin import db
 import settings
 import OnJoinBot
 
-cred = firebase_admin.credentials.Certificate("./firebase.json")
+cred = firebase_admin.credentials.Certificate(settings.FIREBASE_CONFIG_PATH)
 app = firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://godlydiscordbot-7f469-default-rtdb.europe-west1.firebasedatabase.app/'
+    'databaseURL': settings.FIREBASE_DATABASE_URL
 })
 
 discord_bot = lightbulb.BotApp(prefix='!', token=settings.TOKEN, intents=hikari.Intents.GUILD_MEMBERS)
